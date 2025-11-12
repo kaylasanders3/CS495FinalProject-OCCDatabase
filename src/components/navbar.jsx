@@ -8,6 +8,8 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  //new comment for CodeQL scan
+
   useEffect(() => {
     const getUser = async () => {
       const { data: { user } } = await supabase.auth.getUser();
