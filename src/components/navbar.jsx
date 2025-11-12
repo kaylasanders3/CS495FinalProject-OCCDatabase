@@ -15,6 +15,8 @@ export default function Navbar() {
     };
     getUser();
 
+    //comment for CodeQL scan
+
     const { data: subscription } = supabase.auth.onAuthStateChange((_event, session) => {
       const currentUser = session?.user || null;
       setUser(currentUser);
